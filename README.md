@@ -7,7 +7,7 @@
 
 Fourth in-class project.
 
-Site published at https://bikmanas.github.io/3-auth/
+Site published at https://bikmanas.github.io/5-calc/
 
 Design: [Calculator](https://i.pinimg.com/564x/62/0d/df/620ddf3a2b0240b701f8c474f4f3d1a8.jpg)
 
