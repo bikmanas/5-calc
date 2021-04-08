@@ -36,9 +36,13 @@ body{
     text-align: right;
     font-size: 18px;
 }
+
+.calc > .key.yellow{
+    background-color: yellow;
+}
 .calc > .key{
     display: inline-block;
-    background-color: yellow;
+    background-color: #fff;
     width: 0;
     height: 0;
     line-height: 0;
