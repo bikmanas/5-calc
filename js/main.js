@@ -8,8 +8,9 @@ btn.classList.add('...');
 
 */
 //susirandame vieta:
-const selector = '.calc';
-const DOM = document.querySelector(selector);
+// const selector = '.calc';
+const DOM = document.querySelector('.calc');
+const formulaDOM = DOM.querySelector('.formula');
 
 
 //sukuriame turini:
@@ -19,11 +20,11 @@ const symbols = ['C', '+/-', '%', '/', '1', '2', '3', '*', '4', '5', '6', '-', '
 let HTML = '';
 
 for (let i = 0; i < symbols.length; i++){
-    HTML += `<div class="key red" data-symbol="${symbols[i]}"></div>`;
+    HTML += `<div class="key" data-symbol="${symbols[i]}"></div>`;
 }
 
 //istatome turini i vieta:
-DOM.innerHTML += HTML;
+DOM.insertAdjacentHTML('beforeend',HTML);
 
 //susirandame ka tik sukurtus mygtukus (turini):
 
@@ -35,7 +36,8 @@ for (let i = 0; i < buttons.length; i++){
     const btn = buttons[i];
 
     btn.addEventListener('click', function(){
-        console.log(btn.dataset.symbol);
+        const symbol = btn.dataset.symbol;
+        formulaDOM.innerText += symbol;
     });
 }
 
